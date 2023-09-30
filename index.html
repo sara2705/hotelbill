@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        cursor: pointer;
+        border: none;
+    }
+    
+</style>
+
+<body>
+    <div>
+    <table>
+        <tr>
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>Pongal</td>
+            <td><label>35</label><br></td>
+            <td>
+                <button onclick="pongalsub()">-</button>
+                <label id="pongal-count">0</label>
+                <button onclick="pongaladd()">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>idly</td>
+            <td><label>20</label><br></td>
+            <td>
+                <button onclick="idlysub()">-</button>
+                <label id="idly-count">0</label>
+                <button onclick="idlyadd()">+</button></td>
+        </tr>
+        <tr>
+            <td>dosa</td>
+            <td><label>40</label><br></td>
+            <td>
+                <button onclick="dosasub()">-</button>
+                <label id="dosa-count">0</label>
+                <button onclick="dosaadd()">+</button></td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Total</h3>
+            </td>
+            <td>
+                <h2 id="total-price">0</h2>
+            </td>
+        </tr>
+    </table>
+</div>
+    <script src="./task2.js"></script>
+</body>
+
+</html>
